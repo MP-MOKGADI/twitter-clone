@@ -1,0 +1,422 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+.t-body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+}
+.main{
+    display: flex;
+    height: 100vh;
+    width: calc(100vw - 300px);
+    overflow-y: scroll;
+}
+/* sidebar */
+.logo svg{
+    width: 30px;
+    height: 34px;
+    margin-right: 15px;
+}
+.logo:hover{
+    cursor: pointer;
+    background: #cccccc;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.sidebar-icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebar-icons svg{
+    width: 30px;
+    height: 34px;
+}
+.sidebar-icons p{
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 35px;
+    margin-top: 12px;
+}
+.sidebar{
+    margin-left: 50px;
+    width: 300px;
+    height: 100vh;
+    overflow: hidden;
+    border-top: 1px solid #faf3f3;
+    border-right: 1px solid #faf3f3;
+}
+.sidebar-icons:hover{
+    background: #cccccc;
+    border-radius: 25px;
+    width: 220px;
+    padding-left: 10px;
+    
+}
+.post-button{
+    height: 50px;
+    width: 250px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 8px;
+} 
+.post-button:hover{
+    background: #333232;
+    
+}
+/* .main-container */
+ .main-container{
+    width: 600px;
+    height: 100vh;
+    border-top: 1px solid #faf3f3;
+    border-right: 1px solid #faf3f3;
+    /* overflow-y: scroll; */
+ }
+ .maincontainer-header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+    opacity: 70%;
+    height: 55px;
+    padding: 10px 120px;
+    border-bottom:1px solid #faf3f3;
+ }
+ .maincontainer-header p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 6px;
+    position: sticky;
+    top: 0;
+    
+ }
+ .following p{
+    color: rgb(115, 116, 117);
+ }
+ .tweetbox-input{
+    padding: 15px;
+ }
+ .tweetbox-input button{
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    border: none;
+    background: rgb(52, 113, 204);
+    color: white;
+    margin-right:10px ;
+    font-size: 20px;
+ }
+ .tweetbox-input input{
+    border: none;
+    color: rgb(115, 116, 117);
+    font-size: 23px;
+    
+ }
+ 
+.tweetbox-icons {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items:center ;
+}
+.tweetbox-icons svg {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.tweetbox-icons svg path{
+    fill:rgb(29,155,240);
+}
+
+.tweetboxicons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+    margin-left: 70px;
+}
+.tweetbox-button button{
+    height: 40px;
+    width: 60px;
+    border-radius: 30px;
+    border: none;
+    background: rgb(135,137,140);
+    color: white;
+    margin-right:10px ;
+    margin-bottom: 10px;
+}
+.posts-container{
+    border-top: 1px solid #faf3f3;
+    border-bottom: 1px solid #faf3f3;
+    height: 50px;
+}
+.posts-container:hover{
+    background: #faf3f3;
+    cursor: pointer;
+}
+.posts-container p{
+    font-size: 16px;
+    color: rgb(29, 155, 240);
+    padding: 10px 60px;
+    margin-left: 140px;
+
+}
+ 
+.post-avatar img{
+    border-radius: 50%;
+    height: 40px;
+}
+.post{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #faf3f3;
+    padding-bottom: 10px;
+
+}
+.post-body img{
+    width: 550px;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.post-headertext{
+    display: flex;
+    justify-content: space-between;
+}
+.post-headericon svg{
+    width: 20px;
+    height: 20px;
+
+}
+.post-headericon svg path{
+    fill:grey
+}
+.post-badge{
+    font-size: 10px;
+    color:skyblue;
+}
+.post-headerspecial{
+    display: flex;
+    font-weight: 500;
+    font-size: 17px;
+    color: grey;
+}
+.post-username{
+    margin-left: 10px;
+    color: black;
+    font-size: 17px;
+}
+
+
+
+.post-icons svg{
+    width: 1.5rem;
+    height: 1.5rem;
+
+
+}
+.post-icons svg path{
+    fill:grey;
+}
+.post-footer svg{
+    width:1rem;
+    height: 2.5rem;
+}
+.post-footer svg path{
+    fill:grey
+}
+.post-footer :hover{
+    fill: rgb(29, 155, 240);
+    cursor: pointer;
+    color: rgb(29, 155, 240);
+    border-radius: 50%;
+}
+.post-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.post-footer span{
+    font-size: 12px;
+    color: grey;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+/* widgets */
+.widgets-input input{
+    border: none;
+    font-size: 16px;
+    margin-right: 20px;
+}
+input::placeholder{
+    color:black;
+}
+
+.widgets-input{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    padding: 5px;
+    padding-right: 60px;
+    margin: 10px;
+    position: sticky;
+    z-index: 100;
+    background: white;
+    opacity: 90%;
+    top: 0;
+    
+
+}
+.widgets-input svg{
+    width: 25px;
+    height: 15px;
+    margin-left: 5px;
+
+}
+.widgets-input svg path{
+    fill:grey
+}
+.widets-container{
+    border: 1px solid #faf3f3;
+    border-radius: 20px;
+    padding: 10px;
+    height: 570px;
+    width: 350px;
+    margin: 20px;
+}
+.widets-container h3{
+    font-size: 20px;
+    font-weight: 900;
+}
+.trending svg{
+    width: 20px;
+    height: 20px;
+}
+.trending svg path{
+    fill:grey;
+}
+/* .widgets-post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+.widgets-post p{
+    font-size: 13px;
+    color: grey;
+}
+.trending{
+padding-bottom: 500px;
+}
+.trending-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 70px;
+}
+.trend-name{
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+.trending-container:hover{
+    background: #faf3f3;
+    cursor: pointer;
+}
+.showmore{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(29, 155, 240);
+}
+.follow-container{
+    border: 1px solid #faf3f3;
+    border-radius: 20px;
+    padding: 10px;
+    height: 300px;
+    width: 350px;
+    margin: 20px;
+}
+
+.follow-profile{
+    display:flex ;
+}
+.follow-details>span{
+    display: flex;
+}
+.atusrname{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.follow-profile img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+
+}
+.follow-profile{
+    display: flex;
+    justify-content: space-between;
+}
+.follow{
+    margin-top: 10px;
+}
+
+.follow-button button{
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+    background: black;
+    color: white;
+}
+.follow-details strong:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.follow-button button:hover{
+    cursor: pointer;
+    background: #333232;
+}
+.follow{
+    display: flex;
+    justify-content: space-between;
+}
+.follow-fotter{
+    margin: 20px;
+}
+.footer-section span{
+    font-size: 12px;
+    color: grey;
+    margin-left: 5px;
+}
+.footer-section span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
