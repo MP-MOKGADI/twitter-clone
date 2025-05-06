@@ -5,6 +5,7 @@
         height: 100%;
         position: absolute;
         left: 0;
+        overflow-y: scroll;
         
     }
     .sidebar{
@@ -14,5 +15,11 @@
         position: relative;
         
     }
-    
+    .post-body img{
+        height: 300px;
+        width: 410px;
+    }
+    .post{
+        display: flex;
+    }
 }
